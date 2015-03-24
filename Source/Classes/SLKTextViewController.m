@@ -440,9 +440,9 @@ NSString * const SLKKeyboardDidHideNotification =   @"SLKKeyboardDidHideNotifica
     self.externalKeyboardDetected = [self slk_detectExternalKeyboardInNotification:notification];
     
     // Always return 0 if an external keyboard has been detected
-    if (self.externalKeyboardDetected) {
-        return keyboardHeight;
-    }
+//    if (self.externalKeyboardDetected) {
+//        return keyboardHeight;
+//    }
     
     // Convert the main screen bounds into the correct coordinate space but ignore the origin
     CGRect bounds = [self.view convertRect:[UIScreen mainScreen].bounds fromView:nil];
