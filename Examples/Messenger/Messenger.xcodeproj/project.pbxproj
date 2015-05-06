@@ -11,7 +11,6 @@
 		49FEFA70DA01AB47666A8D63 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFA9095EABC480682E6396C /* libPods.a */; };
 		4A8EFBBFAC0F49199AAABF46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFA9095EABC480682E6396C /* libPods.a */; };
 		4F3256191AA77386008C1DD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3256161AA77386008C1DD9 /* AppDelegate.m */; };
-		4F32561A1AA77386008C1DD9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F3256171AA77386008C1DD9 /* Info.plist */; };
 		4F32561B1AA77386008C1DD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3256181AA77386008C1DD9 /* main.m */; };
 		4F32561C1AA77427008C1DD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F86BF6C19F011D0007A3D4A /* AppDelegate.m */; };
 		4F32561D1AA77430008C1DD9 /* MessageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7C6BA41A6E208E006E3FAB /* MessageTextView.m */; };
@@ -38,6 +37,7 @@
 		4F8ADA771A68C37400023752 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8ADA761A68C37400023752 /* Message.m */; };
 		4F8ADA781A68C37400023752 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8ADA761A68C37400023752 /* Message.m */; };
 		4F8ADA791A68C37400023752 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8ADA761A68C37400023752 /* Message.m */; };
+		4F9DFA7F1AD4EDB900841D98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9DFA7D1AD4EDB100841D98 /* ViewController.m */; };
 		71BE10281A72F3E50083EE32 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F86BF9219F01234007A3D4A /* MessageViewController.m */; };
 		71BE10291A72F3E50083EE32 /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F86BF9019F01234007A3D4A /* MessageTableViewCell.m */; };
 		71BE102B1A72F3E50083EE32 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8ADA761A68C37400023752 /* Message.m */; };
@@ -50,6 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		275184D5567C78600C1EF80A /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4F1AD51E19E727750027043E /* ___FILEBASENAME___.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "___FILEBASENAME___.h"; sourceTree = "<group>"; };
 		4F1AD51F19E727750027043E /* ___FILEBASENAME___.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___FILEBASENAME___.m"; sourceTree = "<group>"; };
 		4F1AD52119E727750027043E /* ___FILEBASENAME___.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "___FILEBASENAME___.h"; sourceTree = "<group>"; };
@@ -89,10 +90,15 @@
 		4F86BFE719F05519007A3D4A /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
 		4F8ADA751A68C37400023752 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		4F8ADA761A68C37400023752 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		4F9DFA7C1AD4EDB100841D98 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4F9DFA7D1AD4EDB100841D98 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		622BF1F6C9CF013275EF6275 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6CA1AF2A9EFDCB40E89F297F /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71BE10021A72F3130083EE32 /* Messenger-iPad-Sheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Messenger-iPad-Sheet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA45477DD68F2909374B51A4 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C905E5DB18A83F74BD092CDD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DDFA9095EABC480682E6396C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76FE7634642D0C745F673A5 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +213,8 @@
 				4F3EDB4E199ED00F004C15D6 /* CoreGraphics.framework */,
 				4F3EDB50199ED00F004C15D6 /* UIKit.framework */,
 				DDFA9095EABC480682E6396C /* libPods.a */,
+				BA45477DD68F2909374B51A4 /* libPods-Tests.a */,
+				E76FE7634642D0C745F673A5 /* libPods-Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -236,6 +244,8 @@
 			children = (
 				4F86BF6B19F011D0007A3D4A /* AppDelegate.h */,
 				4F86BF6C19F011D0007A3D4A /* AppDelegate.m */,
+				4F9DFA7C1AD4EDB100841D98 /* ViewController.h */,
+				4F9DFA7D1AD4EDB100841D98 /* ViewController.m */,
 				4F86BF7119F011D0007A3D4A /* Main.storyboard */,
 				4F86BF7619F011D0007A3D4A /* LaunchScreen.xib */,
 				4F86BF6719F011D0007A3D4A /* Supporting Files */,
@@ -309,6 +319,8 @@
 			children = (
 				622BF1F6C9CF013275EF6275 /* Pods.debug.xcconfig */,
 				C905E5DB18A83F74BD092CDD /* Pods.release.xcconfig */,
+				6CA1AF2A9EFDCB40E89F297F /* Pods-Tests.debug.xcconfig */,
+				275184D5567C78600C1EF80A /* Pods-Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -398,12 +410,9 @@
 		4F3EDB41199ED00F004C15D6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Slack Technologies, Inc.";
 				TargetAttributes = {
-					4F3EDB48199ED00F004C15D6 = {
-						DevelopmentTeam = BQR82RBBHL;
-					};
 					4F86BF6419F011D0007A3D4A = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
@@ -469,7 +478,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F32561A1AA77386008C1DD9 /* Info.plist in Resources */,
 				71BE102F1A72F42F0083EE32 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +625,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F9DFA7F1AD4EDB900841D98 /* ViewController.m in Sources */,
 				71BE10301A76C4890083EE32 /* MessageTextView.m in Sources */,
 				4F86BF9819F01234007A3D4A /* MessageViewController.m in Sources */,
 				4F86BF9619F01234007A3D4A /* MessageTableViewCell.m in Sources */,
@@ -767,7 +776,6 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Messenger-Programatic/Info.plist";
@@ -786,7 +794,6 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Messenger-Programatic/Info.plist";
@@ -888,7 +895,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -909,7 +915,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Messenger-iPad-Sheet/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
