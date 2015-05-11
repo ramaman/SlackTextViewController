@@ -516,19 +516,24 @@ NSString * const SLKKeyboardDidHideNotification =   @"SLKKeyboardDidHideNotifica
 
 - (CGFloat)slk_appropriateBottomMarginToWindow
 {
-    // Converts the main screen bounds into the correct coordinate space, but ignore origin
     CGRect bounds = [self.view convertRect:[UIScreen mainScreen].bounds fromView:nil];
+    
+    UIView * targetView = self.view;
+    CGRect viewRect = targetView.frame;
+    
+    if (self.parentViewController != nil) {
+        UIViewController * targetViewController = self.parentViewController.parentViewController;
+        targetView = targetViewController.view;
+        bounds = [targetView convertRect:[UIScreen mainScreen].bounds fromView:nil];
+    }
+    
     bounds = CGRectMake(0, 0, bounds.size.width, bounds.size.height);
     
-    CGRect viewRect = self.view.frame;
+    CGFloat statusBarHeight = CGRectGetHeight([targetView convertRect:[UIApplication sharedApplication].statusBarFrame fromView:nil]);
     
-    CGFloat bottomWindow = CGRectGetMaxY(bounds);
-    CGFloat bottomView = CGRectGetMaxY(viewRect);
-    
-    CGRect statusBarRect = [self.view convertRect:[UIApplication sharedApplication].statusBarFrame fromView:nil];
-    CGFloat statusBarHeight = MIN(statusBarRect.size.height, statusBarRect.size.width);
-    
-    CGFloat bottomMargin = bottomWindow - bottomView;
+    // FIXME - TEMPORARY HARDCODE!
+    //    CGFloat bottomMargin = bottomWindow - bottomView;
+    CGFloat bottomMargin = 90.0;
     
     if (SLK_IS_IPAD && self.modalPresentationStyle == UIModalPresentationFormSheet) {
         
