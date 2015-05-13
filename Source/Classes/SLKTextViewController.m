@@ -516,7 +516,6 @@ NSString * const SLKKeyboardDidHideNotification =   @"SLKKeyboardDidHideNotifica
 
 - (CGFloat)slk_appropriateBottomMarginToWindow
 {
-    // Converts the main screen bounds into the correct coordinate space, but ignore origin
     CGRect bounds = [self.view convertRect:[UIScreen mainScreen].bounds fromView:nil];
     
     UIView * targetView = self.view;
@@ -531,10 +530,6 @@ NSString * const SLKKeyboardDidHideNotification =   @"SLKKeyboardDidHideNotifica
     bounds = CGRectMake(0, 0, bounds.size.width, bounds.size.height);
     
     CGFloat statusBarHeight = CGRectGetHeight([targetView convertRect:[UIApplication sharedApplication].statusBarFrame fromView:nil]);
-
-//    CGRect statusBarRect = [self.view convertRect:[UIApplication sharedApplication].statusBarFrame fromView:nil];
-//    CGFloat statusBarHeight = MIN(statusBarRect.size.height, statusBarRect.size.width);
-
     
     // FIXME - TEMPORARY HARDCODE!
     //    CGFloat bottomMargin = bottomWindow - bottomView;
